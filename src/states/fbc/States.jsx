@@ -7,7 +7,7 @@ const States =() => {
     console.log(state);
     //console.log(cart);
 
-    function btnclick() {
+    function update() {
         console.log("btn clicked");
         setState("Byee");
     }
@@ -15,7 +15,7 @@ const States =() => {
     return(
         <div>
             <h1>States in FBC {state}</h1>
-            <button onClick={btnclick} >Click</button>
+            <button onClick={update} >Click</button>
             <button onClick={()=>{setCart("go to cart")}}>{cart}</button>
         </div>
     );
