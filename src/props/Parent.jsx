@@ -4,7 +4,7 @@ import ChildB from "./ChildB";
 import ChildC from "./ChildC";
 
 const Parent = () => {
-    let [state,setState]= useState("Parent");
+    let [state,setState]= useState(" This is Parent");
 
 
     let data = [10,20,30,40];

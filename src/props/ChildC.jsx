@@ -3,7 +3,7 @@ const ChildC =({ setterFun })=> {
     return (
         <div>
             <h3>I am ChildC</h3>
-            <button onClick={() => setterFun(data)}>send to parent</button>
+            <button onClick={() => setterFun(data)}>Send to parent</button>
         </div>
     );
 };

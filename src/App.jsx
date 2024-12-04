@@ -4,6 +4,7 @@ import States from "./states/fbc/States";
 import Counter from "./states/fbc/Counter";
 import StatesInCBC from "./states/cbc/StatesInCBC";
 import Parent from "./props/Parent";
+import PropsDrillingParent from "./propsdrilling/PropsDrillingParent";
 
 const App = () => {
     return(
@@ -17,6 +18,7 @@ const App = () => {
         {/*   <Counter/> */}
             {/* <StatesInCBC/> */}
             <Parent/>
+            <PropsDrillingParent/>
         </div>
     );
 };
