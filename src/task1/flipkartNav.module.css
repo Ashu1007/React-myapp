@@ -1,0 +1,45 @@
+nav{
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    border: 1px black;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.logo{
+    /* background-color: aqua; */
+    width: 14px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 10px;
+}
+.logo>img{
+    height: 100px;
+}
+.searchContainer{
+    background-color: blueviolet;
+    width: 50px;
+    height: 100%;
+}
+ul{
+    background-color: cadetblue;
+    width: 36%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+ul>li{
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+ul>li:hover:first-of-type{    
+    background-color: #2a55e5;
+    color: white;
+}
