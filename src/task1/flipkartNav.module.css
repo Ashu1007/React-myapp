@@ -9,32 +9,36 @@ nav{
 }
 .logo{
     /* background-color: aqua; */
-    width: 14px;
+    width: 10%;
     height: 100%;
     display: flex;
     justify-content: flex-start;
     padding: 0 10px;
 }
 .logo>img{
-    height: 100px;
+    height: 100%;
 }
 .searchContainer{
-    background-color: blueviolet;
-    width: 50px;
+    background-color: lightgrey;
+    width: 50%;
     height: 100%;
+    margin: 10px, 0;
 }
 ul{
     background-color: cadetblue;
     width: 36%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    list-style: none;
+    height: 100%;
+
 }
 ul>li{
     font-weight: 600;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 5px;
