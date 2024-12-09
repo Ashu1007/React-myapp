@@ -8,7 +8,8 @@
 // import Inlinecss from "./reactcss/Inlinecss";
 // import Footer from "./reactcss/Footer";
 // import Profile from "./images/Profile";
-import FlipkartNav from "./task1/FlipkartNav";
+import ControlledForms1 from "./forms/ControlledForms1";
+//import FlipkartNav from "./task1/FlipkartNav";
 
 const App = () => {
     return(
@@ -28,7 +29,9 @@ const App = () => {
             <Footer/>
             <Profile/> */}
 
-           <FlipkartNav/>
+           {/* <FlipkartNav/> */}
+
+           <ControlledForms1/>
             
         </div>
     );
