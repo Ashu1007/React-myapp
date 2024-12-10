@@ -1,9 +1,9 @@
-import { useState } from "react"
+import React , { useState } from "react"
 
 const ControlledForms1 = () => {
-    let [username,setUsername]= useState()
-    let [useremail,setUseremail]=useState()
-    let [userpassword,setUserpassword]=useState()
+    let [username,setUsername]= useState("")
+    let [useremail,setUseremail]=useState("")
+    let [userpassword,setUserpassword]=useState("")
 
     let handleUsername = (e) => {
         setUsername(e.target.value);
@@ -16,7 +16,7 @@ const ControlledForms1 = () => {
     }
 
     let formSubmit = (e) => {
-        e.prevenDefault();
+        e.preventDefault();
         console.log({username,useremail,userpassword});
         setUsername("");
         setUseremail("");
@@ -30,15 +30,27 @@ const ControlledForms1 = () => {
         
         <form onSubmit={formSubmit}>
             <label>Name</label>
-            <input type="text" value={username} onChange={handleUsername}></input>
+            <input 
+                type="text" 
+                value={username} 
+                onChange={handleUsername}
+                />
 
             <br></br>
             <label>email</label>
-            <input type="email" value={useremail} onChange={handleUseremail}></input>
+            <input 
+                type="email" 
+                value={useremail} 
+                onChange={handleUseremail}
+                />
 
             <br></br>
             <label>password</label>
-            <input type="password" value={userpassword} onChange={handleUserpassword}></input>
+            <input 
+            type="password" 
+            value={userpassword} 
+            onChange={handleUserpassword}
+            />
 
             <br></br>
             <button type="submit">submit</button>
