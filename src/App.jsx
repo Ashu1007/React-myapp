@@ -9,6 +9,7 @@
 // import Footer from "./reactcss/Footer";
 // import Profile from "./images/Profile";
 import ControlledForms1 from "./forms/ControlledForms1";
+import ControlledForms2 from "./forms/ControlledForms2";
 //import FlipkartNav from "./task1/FlipkartNav";
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
            {/* <FlipkartNav/> */}
 
            <ControlledForms1/>
+           <ControlledForms2/>
             
         </div>
     );
