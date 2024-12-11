@@ -17,6 +17,8 @@ const ControlledForms2 = () => {
     let formSubmit = (e) => {
         e.preventDefault();
         console.log(formData);
+        
+
     }
   return (
     <div>
