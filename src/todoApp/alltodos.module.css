@@ -1,0 +1,22 @@
+#todosWrapper{
+    background-color: aqua;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+}
+#todosWrapper > section {
+    border: 1px solid gainsboro;
+    width: 200px;
+    padding: 10px;
+}
+#todosWrapper > section:hover {
+    box-shadow: 5px 8px 5px black;
+    transform: 0.5s;
+}
+#todosWrapper >section> button:last-of-type {
+    margin-left: 20px;
+}
+#todosWrapper >section> button {
+    padding: 3px 10px;
+}

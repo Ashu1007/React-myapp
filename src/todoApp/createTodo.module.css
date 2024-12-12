@@ -1,13 +1,13 @@
 #createTodo{
     border: 1px solid black;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #createTodo>form{
     padding: 10px;
-    background-color: green;
+    background-color: rgb(216, 20, 128);
     border-radius: 10px;
     box-shadow: 0 0 3px black;
     display: flex;
