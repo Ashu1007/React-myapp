@@ -1,6 +1,5 @@
 import React from 'react'
 import style from "./createTodo.module.css";
-//import style from "./alltodos.module.css";
 
 const CreateTodo = (prop) => {
 

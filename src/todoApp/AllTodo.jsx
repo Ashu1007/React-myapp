@@ -1,20 +1,19 @@
 import React from 'react';
-import "./alltodos.module.css";
-
+import Style from "./alltodos.module.css";
 const AllTodo = (prop) => {
   console.log(prop); //{allTodos:[{},{},{}]
-  let{ allTodos} = prop;
+  let{ AllTodos , deleteTodo, editTodo} = prop;
 
   return (
-    <div>
-      {allTodos.map((ele) => {
+    <div id={Style.todosWrapper}>
+      {AllTodos.map((ele) => {
         console.log(ele);
         let { text, id } =ele;
         return(
           <section key ={id}>
             <h1>{text}</h1>
-            <button>edit</button><br></br>
-            <button>delete</button>
+            <button onClick={()=>editTodo(id)}>edit</button>
+            <button onClick={()=>deleteTodo(id)}>delete</button>
           </section>
 
         )

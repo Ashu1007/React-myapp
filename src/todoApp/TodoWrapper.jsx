@@ -28,10 +28,34 @@ const TodoWrapper = () => {
 
          console.log(allTodos);
 
+         let deleteTodo = (id) => {
+          console.log("delete",id);
+          let filteredTodo =allTodos.filter((ele) => {
+            return ele.id !== id;
+          });
+          setAllTodos(filteredTodo);
+         };
+
+         let editTodo = (id) => {
+          console.log("edit",id);
+          let editTodo = allTodos.find((ele) => {
+            return ele.id === id;
+          });
+          console.log(editTodo);
+
+          let filteredTodo =allTodos.filter((ele) => {
+            return ele.id !== id;
+          });
+          setAllTodos(filteredTodo);
+
+          setTodo(editTodo.text);
+         };
+
+
   return (
     <div>
         <CreateTodo todo={todo} handleTodo={handleTodo} createTodo={createTodo}/>
-        <AllTodo allTodos={allTodos}/>
+        <AllTodo AllTodos={allTodos} deleteTodo={deleteTodo} editTodo={editTodo}/>
     </div>
   );
 };
