@@ -10,10 +10,18 @@
 // import Profile from "./images/Profile";
 // import ControlledForms1 from "./forms/ControlledForms1";
 // import ControlledForms2 from "./forms/ControlledForms2";
-import TodoWrapper from "./todoApp/TodoWrapper";
+// import TodoWrapper from "./todoApp/TodoWrapper";
 //import FlipkartNav from "./task1/FlipkartNav";
 
+import FetchApi from "./fetch/FetchApi";
+
 const App = () => {
+    let [toggle, setToggle] = useState(false);
+
+
+
+
+
     return(
         <div>
             {/* {<Navbar></Navbar>
@@ -35,8 +43,9 @@ const App = () => {
 
            {/* <ControlledForms1/>
            <ControlledForms2/> */}
-           <TodoWrapper/>
-            
+           {/* <TodoWrapper/> */}
+
+           <FetchApi/>
         </div>
     );
 };
